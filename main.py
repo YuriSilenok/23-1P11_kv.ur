@@ -14,6 +14,7 @@ def treesome(a, b, c):
     if d < 0:
         print("Корней нет")
 
+
 if __name__ == '__main__':
     a = float(input('Введите а: '))
     b = float(input('Введите b: '))
