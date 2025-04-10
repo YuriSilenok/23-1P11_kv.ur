@@ -16,7 +16,7 @@ def treesome(a, b, c):
 
 
 if __name__ == '__main__':
-    a = float(input('Введите а: '))
-    b = float(input('Введите b: '))
-    c = float(input('Введите c: '))
-    treesome(a, b, c)
+    A = float(input('Введите а: '))
+    B = float(input('Введите b: '))
+    C = float(input('Введите c: '))
+    treesome(A, B, C)
