@@ -1,10 +1,8 @@
 """Решение квадратного уравнения"""
-a = float(input('Введите а'))
-b = float(input('Введите b'))
-c = float(input('Введите c'))
 
 
 def treesome(a, b, c):
+    """Функция для вычисления корней квадратного уровнения"""
     d = b**2-4*(a*c)
     if d > 0:
         print('x1= ', (-b + d ** (0.5) / (a * 2)))
@@ -15,3 +13,9 @@ def treesome(a, b, c):
 
     if d < 0:
         print("Корней нет")
+
+if __name__ == '__main__':
+    a = float(input('Введите а: '))
+    b = float(input('Введите b: '))
+    c = float(input('Введите c: '))
+    treesome(a, b, c)
