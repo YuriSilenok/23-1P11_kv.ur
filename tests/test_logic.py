@@ -26,3 +26,17 @@ class TestKV(unittest.TestCase):
         self.assertEqual(len(result), 2, 'Длинна кортежа не равна 2')
         self.assertEqual(result[0], d, 'Неверно вычислен дискриминант')
         self.assertEqual(result[1], x, 'Неверно вычислен x')
+
+    def test_delenie_na_nol(self):
+        """тест, квадратное ли уравнение"""
+        a, b, c = 0, 4, 2
+        x = -0.5
+        result = treesome(a, b, c)
+        self.assertEqual(len(result), 2, 'Длина кортежа не равна 2')
+        self.assertEqual(result[0], x, 'Неверно вычислен x')
+        mes1 = (
+            'Это не квадртаное уравнение, '
+            'будет высчитан результат линейного уравнения'
+        )
+        mes2 = 'Неверное сообщение'
+        self.assertEqual(result[1], mes1, mes2)
