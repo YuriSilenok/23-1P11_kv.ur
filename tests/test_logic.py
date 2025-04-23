@@ -34,4 +34,6 @@ class TestKV(unittest.TestCase):
         result = treesome(a, b, c)
         self.assertEqual(len(result), 2, 'Длинна кортежа не равна 2')
         self.assertEqual(result[0], d, 'Неверно вычислен дискриминант')
-        self.assertEqual(result[1], "Корней нет", 'Неверное результат в ответе')
+        self.assertEqual(result[1],
+                         "Корней нет", 
+                         'Неверный результат в ответе')
