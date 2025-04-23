@@ -35,5 +35,5 @@ class TestKV(unittest.TestCase):
         self.assertEqual(len(result), 2, 'Длинна кортежа не равна 2')
         self.assertEqual(result[0], d, 'Неверно вычислен дискриминант')
         self.assertEqual(result[1],
-                         "Корней нет", 
+                         "Корней нет",
                          'Неверный результат в ответе')
