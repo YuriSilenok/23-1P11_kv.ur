@@ -4,7 +4,7 @@ from api import api
 from fastapi.testclient import TestClient
 
 
-class TestZeroABC(unittest.TestCase):
+class TestKV(unittest.TestCase):
     """ Тестирование квадратного уравнения """
     def setUp(self):
         self.client = TestClient(api)
