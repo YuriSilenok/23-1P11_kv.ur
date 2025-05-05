@@ -1,19 +1,16 @@
-""" import """
+""" Модуль тестирования квадратного уравнения API"""
 import unittest
 from api import api
 from fastapi.testclient import TestClient
 
 
 class TestZeroABC(unittest.TestCase):
-    """
-        Тест для случая, когда a=0, b=0, c=0 одновременно.
-        Проверяем, что API корректно обрабатывает такой запрос.
-        """
+    """ Тестирование квадратного уравнения """
     def setUp(self):
         self.client = TestClient(api)
 
     def test_all_zero_abc(self):
-        """ Функция проверки """
+        """ Тест a=0, b=0, c=0 """
         d = {'a': 0, 'b': 0, 'c': 0}
         x = 0
         response = self.client.get("/calculate", params=d)
