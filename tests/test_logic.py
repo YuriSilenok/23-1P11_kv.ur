@@ -42,7 +42,7 @@ class TestKV(unittest.TestCase):
         """Тест a=0, b!=0"""
         a = 0
         b = 1
-        result = dfh(a, b)
+        result = treesome(a, b, 1)
         self.assertEqual(result[0], a, 'Первый элемент должен быть равен a(0)')
         self.assertEqual(result[1], b, 'Второй элемент должен быть равен b(1)')
         self.assertNotEqual(b, 0, 'Переменная b должна быть не равна 0')
