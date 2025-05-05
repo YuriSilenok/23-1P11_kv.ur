@@ -16,11 +16,9 @@ class QuadraticEquation(BaseModel):
 def solve_quadratic(eq: QuadraticEquation):
     """иухэ"""
     a, b, c = eq.a, eq.b, eq.c
-    D = b**2 - 4*a*c
+    d = b**2 - 4*a*c
 
-    if a == 0:
-        return {"ОШИБКА": "Коэффициент а НЕ МОЖЕТ БЫТЬ РАВЕН 0"}
-    elif D == 0:
+    if d == 0:
         root = -b / (2*a)
         explanation = (
             "Дискриминант равен нулю.",
@@ -31,6 +29,7 @@ def solve_quadratic(eq: QuadraticEquation):
             "a": a,
             "b": b,
             "c": c,
-            "discriminant": D,
+            "discriminant": d,
             "explanation": explanation,
             "roots": root}
+    return "null"
