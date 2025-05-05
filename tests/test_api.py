@@ -12,7 +12,7 @@ class TestZeroABC(unittest.TestCase):
     def test_all_zero_abc(self):
         """ Тест a=0, b=0, c=0 """
         d = {'a': 0, 'b': 0, 'c': 0}
-        x = 0
+        x = 'Бесконечно много решений'
         response = self.client.get("/calculate", params=d)
         self.assertEqual(response.status_code, 200)
         result = response.json()
