@@ -45,7 +45,7 @@ class TestKV(unittest.TestCase):
         result = treesome(a, b, c)
         self.assertEqual(len(result), 1, 'Длинна кортежа не равна 1')
         self.assertEqual(
-            result[1],
+            result[0],
             "Бесконечно много решений",
             'Неверный результат в ответе для случая a=0, b=0, c=0'
         )
