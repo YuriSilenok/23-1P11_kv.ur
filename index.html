@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <TITLE>Форма ввода данных(a,b,c)</TITLE>
+</head>
+<body>
+    <h1>Введите коэффициенты уравнения</h1>
+    <form id="equalationForm">
+    </label>a:
+        <input type="text" id="a" required>
+    </label>
+    <br><br>
+
+    </label>b:
+        <input type="text" id="b" required>
+    </label>
+    <br><br>
+
+    </label>c:
+        <input type="text" id="c" required>
+    </label>
+    <br><br>
+
+    <button type="submit">Отправить</button>
+</form>
+
+    <script>
+    document.getElementById('equationForm').addEventListener('sumbit', function(event){
+        event.preventDefault();
+
+        const a = document,getElementById('a').value;
+        const b = document,getElementById('b').value;
+        const c = document,getElementById('c').value;
+
+        alert('Вы ввели:\na: ${a}\nb: ${b}\nc: ${c}');
+    });
+    </script>
+</body>
+</html>
