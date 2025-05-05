@@ -1,7 +1,9 @@
-from fastapi.testclient import TestClient
-import unittest
+"""Модуль тестирования квадратного уравнения"""
 
-from .main import app
+import unittest
+from fastapi.testclient import TestClient
+
+from main import app
 
 client = TestClient(app)
 
