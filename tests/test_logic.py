@@ -37,3 +37,15 @@ class TestKV(unittest.TestCase):
         self.assertEqual(result[1],
                          "Корней нет",
                          'Неверный результат в ответе')
+
+    def test_0(self):
+        """Тест a=0, b=0, c=0. В этом случае уравнение 0x² + 0x + 0 = 0
+        имеет бесконечно много решений"""
+        a, b, c = 0, 0, 0
+        result = treesome(a, b, c)
+        self.assertEqual(len(result), 1, 'Длинна кортежа не равна 1')
+        self.assertEqual(
+            result[1],
+            "Бесконечно много решений",
+            'Неверный результат в ответе для случая a=0, b=0, c=0'
+        )
