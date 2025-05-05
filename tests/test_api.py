@@ -1,6 +1,6 @@
 """ Модуль тестирования квадратного уравнения API"""
 import unittest
-from .api import api
+from ..api import api
 from fastapi.testclient import TestClient
 
 
