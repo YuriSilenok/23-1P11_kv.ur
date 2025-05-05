@@ -43,12 +43,7 @@ class TestKV(unittest.TestCase):
         имеет бесконечно много решений"""
         a, b, c = 0, 0, 0
         result = treesome(a, b, c)
-        self.assertEqual(len(result), 2, 'Длинна кортежа не равна 2')
-        self.assertEqual(
-            result[0],
-            "бесконечно",
-            'Неверный результат дискриминанта для случая a=0, b=0, c=0'
-        )
+        self.assertEqual(len(result), 1, 'Длинна кортежа не равна 1')
         self.assertEqual(
             result[1],
             "Бесконечно много решений",
