@@ -1,2 +1,3 @@
 """загулшка пока остутствует реализация api"""
-api = None
+from fastapi import FastAPI 
+api = FastAPI()
