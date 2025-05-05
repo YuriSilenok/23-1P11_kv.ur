@@ -17,12 +17,12 @@ class TestZeroABC(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         result = response.json()
 
-        self.assertEqual(result[0], x, 'Неверно высчитан x')
-
         mes1 = (
             'Это линейное уравнение, '
-            'дискриминант высчитать невозможно'
+            'Прямая совпадает с осью Ox'
         )
         mes2 = 'Неверное сообщение'
         self.assertEqual(len(result), 2, 'Длина кортежа не равна 2')
-        self.assertEqual(result[1], mes1, mes2)
+        self.assertEqual(result[0], mes1, mes2)
+
+        self.assertEqual(result[1], x, 'Неверно высчитан x')
