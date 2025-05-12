@@ -10,7 +10,7 @@ client = TestClient(app)
 
 class TestAPI(unittest.TestCase):
     """Класс тестирования API"""
-    def test_c_not_equal_zero():
+    def test_c_not_equal_zero(self):
         """Тестирование a=0, b=0, c!=0"""
         response = client.get("/solve?a=0&b=0&c=5")
         assert response.status_code == 400
