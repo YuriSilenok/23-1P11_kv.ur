@@ -7,10 +7,13 @@ def treesome(a, b, c):
     if d > 0:
         return d, ((-b - d ** (0.5)) / (a * 2)), ((-b + d ** (0.5)) / (a * 2))
 
-    if d == 0:
+    elif d == 0:
         return d, (-b / (a * 2))
 
-    return d, "Корней нет"
+    elif a == 0 and b == 0 and c == 0:
+        return "Бесконечно много решений"
+    else:
+        return d, "Корней нет"
 
 
 if __name__ == '__main__':
