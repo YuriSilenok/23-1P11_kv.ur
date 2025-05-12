@@ -7,6 +7,9 @@ def treesome(a: float, b: float, c: float):
     if d > 0:
         return d, ((-b - d ** (0.5)) / (a * 2)), ((-b + d ** (0.5)) / (a * 2))
 
+    if a == 0 and b == 0 and c == 0:
+        return ("Бесконечно много решений",)
+
     if d == 0:
         return d, (-b / (a * 2))
 
