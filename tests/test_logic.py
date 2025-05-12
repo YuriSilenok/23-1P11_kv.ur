@@ -50,7 +50,7 @@ class TestKV(unittest.TestCase):
             'Неверный результат в ответе для случая a=0, b=0, c=0'
         )
 
-    def test_a0b0(self):
+    def test_a0_b0_c_not0(self):
         """Тест a=0, b=0, c=2. В этом случае уравнение 0x² + 0x + 2 = 0
         не имеет решений"""
         a, b, c = 0, 0, 2
