@@ -6,6 +6,6 @@ app = FastAPI()
 
 
 @app.get("/treesome/")
-async def treesome_result(a: int, b: int, c: int):
+async def treesome_result(a: float, b: float, c: float):
     """Возвращает решение квадратного уравнения"""
     return treesome(a, b, c)
