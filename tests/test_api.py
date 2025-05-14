@@ -13,5 +13,4 @@ class TestAPI(unittest.TestCase):
     def test_c_not_equal_zero(self):
         """Тестирование a=0, b=0, c!=0"""
         response = client.get("/solve?a=0&b=0&c=5")
-        if response.status_code == 500:
-            return print("Уравнение не имеет решений")
+        self.assertEqual(response.status_code, 500)
