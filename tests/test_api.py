@@ -12,5 +12,5 @@ class TestAPI(unittest.TestCase):
     """Класс тестирования API"""
     def test_c_not_equal_zero(self):
         """Тестирование a=0, b=0, c!=0"""
-        response = client.get("/solve?a=0&b=0&c=5")
+        response = client.get("/treesome?a=0&b=0&c=5")
         self.assertEqual(response.status_code, 500)
